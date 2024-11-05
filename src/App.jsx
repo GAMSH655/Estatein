@@ -1,15 +1,13 @@
 import { useState } from 'react'
-import {FaStar} from "react-icons"
 import { BrowserRouter } from 'react-router-dom'
 import './App.css'
-
+import Home from "../src/Pages/Home"
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>  <h1 className="text-3xl font-bold underline">
-    Hello world!
-  </h1> 
+    <>   
+    <Home/>
     </>
   )
 }
