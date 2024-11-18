@@ -14,8 +14,8 @@ export const Hero = () => {
        <h3 className="text-[3rem] text-[#ffff] font-semibold p-[10px]"> Discover Your Dream</h3>
        <h3 className="text-[3rem] text-[#ffff] font-semibold  p-[10px]"> Property with Estatein</h3>
        <p className="text-[#ffff]   p-[10px]"> Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
-       <button class="bg-black text-white font-bold py-2 px-4 rounded  border border-white hover:bg-purple hover:shadow-lg transition-all duration-300 m-[10px] w-[180px] capitalize">learn more</button>
-       <button class="bg-black text-white font-bold py-2 px-4 rounded border border-white hover:bg-purple hover:shadow-lg transition-all duration-300  m-[10px] w-[180px] capitalize"> browse properties</button>
+       <button className="bg-black text-white font-bold py-2 px-4 rounded  border border-white hover:bg-purple hover:shadow-lg transition-all duration-300 m-[10px] w-[180px] capitalize">learn more</button>
+       <button className="bg-black text-white font-bold py-2 px-4 rounded border border-white hover:bg-purple hover:shadow-lg transition-all duration-300  m-[10px] w-[180px] capitalize"> browse properties</button>
        <div className=' flex'>
          <div className='bg-[#1A1A1A] m-[15px]  p-[20px] capitalize  rounded-md text-[#ffff]'>
             <h3 className="font-bold text-white text-[2rem]">200+</h3>
