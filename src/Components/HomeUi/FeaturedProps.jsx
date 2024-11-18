@@ -43,7 +43,7 @@ const FeaturedProps = () => {
 
         {
           arrayofHouse.map(({houseImg , houseName , houseInfo ,bathHubIcon, bedRoomIcon ,villa, bedRoom ,btHub} ,index)=>{
-            return <div key={index} className="border border-white m-[10px] p-[10px]">
+            return <div key={index} className="border border-white m-[10px] p-[10px] transition-transform duration-300 hover:scale-90">
                 <img src={houseImg} alt="" className='w-[100%] capitalize object-contain' />
               <h3 className="text-3xl font-semibold text-[white] p-[10px]">{houseName}</h3>
                <p className="text-[white] p-[10px]">{houseInfo}</p>
@@ -55,7 +55,6 @@ const FeaturedProps = () => {
             </div>
           })
         }
-    
       </div>
     </div>
   )}
