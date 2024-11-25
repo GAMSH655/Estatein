@@ -3,13 +3,8 @@ import Bungalow  from "../../assets/Bung.png"
 import Skycrapper from "../../assets/Skycrapper.png"
 import SKY from "../../../src/assets/Sky.png"
 import Abs from "../../assets/Abstract.png"
-import Wade from "../../assets/Wade.png"
-import Emilly from "../../assets/Emilly.png"
-import John from "../../assets/John.png"
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import { FaStar } from 'react-icons/fa'
-import { FaBath } from "react-icons/fa";
 const FeaturedProps = () => {
 
   const arrayofHouse = [
@@ -39,26 +34,6 @@ const FeaturedProps = () => {
       btHub: 8
     },
   ]
-   const customerQoute =[
-    {customerName : "emilly thomson" ,
-      customerImg : Emilly,
-      customerLocation: "usa florida",
-      customerSpeechTitle: "Efficient and Reliable",
-      customerSpeech: "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results."
-    },
-    {customerName : "wade warren" ,
-      customerImg : Wade,
-      customerLocation: "usa florida",
-        customerSpeechTitle: "Exceptional Service!",
-      customerSpeech: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
-    },
-    {customerName : "john samthon" ,
-      customerImg : John,
-      customerLocation: "usa florida",
-      customerSpeechTitle: "Exceptional Service!",
-      customerSpeech: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!"
-    }
-   ]
   return (
       <div className="">
           <div className='m-[50px]'>
@@ -101,35 +76,6 @@ const FeaturedProps = () => {
                 <FaArrowRight/> </span>
          </div>
     </div>
-      <div className="p-[50px]">
-        <h3 className="font-semibold capialize text-white text-[2rem]">what our client says</h3>
-       <div className="flex justify-between">
-       <p className="text-[16px] text-white pt-[10px] ">Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
-        <button className='bg-[#050303] w-[190px] text-white capitalize outline-none border border-white hover:bg-purple transition-all p-[4px] rounded-md '>
-           view all Testimonies
-         </button>
-       </div>
-       <div className='flex mt-[30px]'>
-        {
-         customerQoute.map(({customerSpeechTitle , customerSpeech , customerImg , customerName, customerLocation} , index)=>(
-            <div className='border border-2-white-500 m-[10px] rounded-md' key={index}>
-             <span className='flex text-[16px] m-[20px]'><FaStar className='text-[#FFE500]'/>  <FaStar className='text-[#FFE500]'/>  <FaStar className='text-[#FFE500]'/>  <FaStar className='text-[#FFE500]'/> </span>
-             <h3 className="font-medium capialize text-white text-[1.2rem] m-[20px]">{customerSpeechTitle}</h3>
-             <p className="text-[16px] text-white m-[20px]">{customerSpeech}</p>
-             <div className="flex mt-[30px]">
-               <img src={customerImg} className='m-[10px]' />
-               <p className="capitalize font-medium text-[1rem] text-white m-[10px]">
-                  {customerName}
-                  <span className="block capitalize text-gray-300 font-normal">{customerLocation}</span>
-               </p>
-             </div>
-           </div>
-         )
-            
-         )
-        }
-        </div>
-      </div>
       </div>
   )}
 
