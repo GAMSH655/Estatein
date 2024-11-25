@@ -3,6 +3,9 @@ import Bungalow  from "../../assets/Bung.png"
 import Skycrapper from "../../assets/Skycrapper.png"
 import SKY from "../../../src/assets/Sky.png"
 import Abs from "../../assets/Abstract.png"
+import Wade from "../../assets/Wade.png"
+import Emilly from "../../assets/Emilly.png"
+import John from "../../assets/John.png"
 const FeaturedProps = () => {
 
   const arrayofHouse = [
@@ -32,6 +35,26 @@ const FeaturedProps = () => {
       btHub: 8
     },
   ]
+   const customerQoute =[
+    {customerName : "emilly thomson" ,
+      customerImg : Emilly,
+      customerLocation: "usa florida",
+      customerSpeechTitle: "Efficient and Reliable",
+      customerSpeech: "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results."
+    },
+    {customerName : "wade warren" ,
+      customerImg : Wade,
+      customerLocation: "usa florida",
+        customerSpeechTitle: "Exceptional Service!",
+      customerSpeech: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+    },
+    {customerName : "wade warren" ,
+      customerImg : Wade,
+      customerLocation: "usa florida",
+        customerSpeechTitle: "Exceptional Service!",
+      customerSpeech: "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+    }
+   ]
   return (
       <div className="">
           <div className='m-[50px]'>
@@ -72,8 +95,13 @@ const FeaturedProps = () => {
          </div> */}
     </div>
       <div className="">
-        <img src={Abs} alt="" />
-        <p  className="font-bold capialize text-white text-[2rem]">what our client says</p>
+        <h3 className="font-bold capialize text-white text-[2rem]">what our client says</h3>
+       <div className="flex justify-between">
+       <p className="text-[16px] text-white pt-[10px] ">Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
+        <button className='bg-[#262626] w-[190px] text-white capitalize outline-none border border-white hover:bg-purple transition-all p-[4px] rounded-md '>
+           view all FAQ
+         </button>
+       </div>
       </div>
       </div>
   )}
