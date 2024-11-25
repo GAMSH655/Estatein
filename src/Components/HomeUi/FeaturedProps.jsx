@@ -89,19 +89,36 @@ const FeaturedProps = () => {
           })
         }
       </div>
-      {/* <div className="flex justify-end">
+      <div className="flex justify-end">
              <span className='text-3xl text-white font-bold m-[10px] bg-purple p-[5px] rounded-full'>-</span>
              <span className='text-3xl text-white font-bold m-[10px]  bg-purple p-[5px] rounded-full'>-</span>
-         </div> */}
+         </div>
     </div>
-      <div className="">
-        <h3 className="font-bold capialize text-white text-[2rem]">what our client says</h3>
+      <div className="p-[50px]">
+        <h3 className="font-semibold capialize text-white text-[2rem]">what our client says</h3>
        <div className="flex justify-between">
        <p className="text-[16px] text-white pt-[10px] ">Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.</p>
-        <button className='bg-[#262626] w-[190px] text-white capitalize outline-none border border-white hover:bg-purple transition-all p-[4px] rounded-md '>
+        <button className='bg-[#050303] w-[190px] text-white capitalize outline-none border border-white hover:bg-purple transition-all p-[4px] rounded-md '>
            view all FAQ
          </button>
        </div>
+       <div>
+        {
+         customerQoute.map(({customerSpeechTitle , customerSpeech , customerImg , customerName, customerLocation} , index)=>{
+           <div className="" key={index}>
+             <h3 className="font-semibold capialize text-white text-[2rem]">{customerSpeechTitle}</h3>
+             <p className="text-[16px] text-white pt-[10px]">{customerSpeech}</p>
+             <div className="div">
+               <img src={customerImg} alt="" />
+               <p className="">
+                  {customerName}
+                  <span className="block capitalize text-gray-300">{customerLocation}</span>
+               </p>
+             </div>
+           </div>
+         })
+        }
+        </div>
       </div>
       </div>
   )}
