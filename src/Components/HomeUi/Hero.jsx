@@ -1,5 +1,5 @@
 import React from 'react'
-import Skyp from "../../assets/container.png"
+import Skyp from "../../assets/Cont.png"
 import smallHouse from "../../assets/small-home.png"
 import Money from "../../assets/moneyt.png"
 import Roller from "../../assets/roll.png"
