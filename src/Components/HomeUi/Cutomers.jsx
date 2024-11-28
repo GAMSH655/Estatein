@@ -1,7 +1,8 @@
 import Wade from "../../assets/Wade.png";
 import Emilly from "../../assets/Emilly.png";
 import John from "../../assets/John.png";
-import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaStar } from 
+"react-icons/fa";
 import { useState } from "react";
 
 const Customers = () => {
@@ -15,6 +16,7 @@ const Customers = () => {
       customerSpeechTitle: "Efficient and Reliable",
       customerSpeech:
         "Estatein provided us with top-notch service. They helped us sell our property quickly and at a great price. We couldn't be happier with the results.",
+        showcard:false
     },
     {
       customerName: "Wade Warren",
@@ -23,6 +25,7 @@ const Customers = () => {
       customerSpeechTitle: "Exceptional Service!",
       customerSpeech:
         "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+        showcard:false
     },
     {
       customerName: "John Mans",
@@ -31,6 +34,7 @@ const Customers = () => {
       customerSpeechTitle: "Exceptional Service!",
       customerSpeech:
         "Our experience with Estatein was outstanding. Their team's dedication and professionalism made finding our dream home a breeze. Highly recommended!",
+        showcard:false
     },
   ];
 
@@ -53,11 +57,11 @@ const Customers = () => {
   } = customerQuotes[currentCustomerIndex];
 
   return (
-    <div className="p-12">
-      <h3 className="font-semibold capitalize text-white text-2xl">
+    <div className=" mt-[20px] md:p-12">
+      <h3 className="font-semibold capitalize text-white text-2xl md:text-3xl">
         What our clients say
       </h3>
-      <div className="flex justify-between items-center mt-4">
+      <div className="flex flex-col md:flex-row items-center mt-4">
         <p className="text-sm text-white">
           Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.
         </p>

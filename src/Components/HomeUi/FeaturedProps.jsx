@@ -36,19 +36,19 @@ const FeaturedProps = () => {
   ]
   return (
       <div className="">
-          <div className='m-[50px]'>
-      <h3 className="font-bold capialize text-white text-[2rem]"> Featured properties</h3>
-      <div className="flex justify-between  items-center mt-[20px]">
-        <p className=" text-white text-wrap">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available <br /> through Estatein. Click "View Details" for more information.</p>
-         <button className='bg-[#262626] w-[190px] text-white capitalize outline-none border border-white hover:bg-purple transition-all p-[4px] rounded-md '>
+          <div className='md:m-[50px]'>
+      <h3 className="font-semibold md:font-bold capialize text-white text-[2rem] p-[10px] md:p-[0px]"> Featured properties</h3>
+      <div className="flex flex-col  md:flex-row  items-center mt-[20px] ">
+        <p className=" text-white text-wrap p-[10px]">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available <br /> through Estatein. Click "View Details" for more information.</p>
+         <button className='bg-[#262626] w-[290px] mt-[20px] md:w-[190px] md:ml-[20px] text-white capitalize outline-none border border-white hover:bg-purple transition-all p-[4px] rounded-md '>
            view all properties
          </button>
       </div>
-      <div className="flex">
+      <div className="flex flex-col mt-[30px] md:flex-row">
 
         {
           arrayofHouse.map(({houseImg , houseName , houseInfo ,bathHubIcon, bedRoomIcon ,villa, bedRoom ,btHub} ,index)=>{
-            return <div key={index} className="border border-white m-[5px] p-[10px] transition-transform duration-300 hover:scale-90">
+            return <div key={index} className=" border sm:w-[100vw] border-white m-[5px] p-[10px] transition-transform duration-300 hover:scale-90">
                 <img src={houseImg} alt="" className='w-[100%] capitalize object-contain' />
               <h3 className="text-3xl font-semibold text-[white] p-[10px]">{houseName}</h3>
                <p className="text-[white] p-[10px]">{houseInfo}</p>

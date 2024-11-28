@@ -10,22 +10,22 @@ export const Hero = () => {
 
         <div>
       <div className=" flex flex-col-reverse md:flex-row">
-      <div className= "p-[50px]" >
+      <div className= "md:p-[50px]" >
        <h3 className="text-2xl md:text-[5xl] text-[#ffff] font-semibold p-[10px]"> Discover Your Dream</h3>
        <h3 className="text-2xl md:text-3xl text-[#ffff] font-semibold  p-[10px]"> Property with Estatein</h3>
        <p className="text-[#ffff]   p-[10px]"> Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
-       <button className="bg-black text-white font-bold py-2 px-4 rounded  border border-white hover:bg-purple hover:shadow-lg transition-all duration-300 m-[10px] w-full md:w-[180px] capitalize ">learn more</button>
-       <button className="bg-black text-white font-bold py-2 px-4 rounded border border-white hover:bg-purple hover:shadow-lg transition-all duration-300  m-[10px]  w-full md:w-[180px] capitalize"> browse properties</button>
+       <button className="bg-black text-white font-bold py-2 px-4 rounded  border border-white hover:bg-purple hover:shadow-lg transition-all duration-300 m-[10px] w-[360px] md:w-[180px] capitalize ">learn more</button>
+       <button className="bg-black text-white font-bold py-2 px-4 rounded border border-white hover:bg-purple hover:shadow-lg transition-all duration-300  m-[10px]  w-[360px] md:w-[180px]  capitalize"> browse properties</button>
        <div className=' flex flex-col md:flex-row '>
-         <div className='w-[100%] bg-[#1A1A1A] m-[15px]  p-[20px] capitalize  rounded-md text-[#ffff]'>
+         <div className='w-[100%] bg-[#1A1A1A] mt-[10px] md:m-[15px] text-center  p-[20px] capitalize  rounded-md text-[#ffff]'>
             <h3 className="font-bold text-white text-[2rem]">200+</h3>
             <p className="">happy customers</p>
          </div>
-         <div className=' w-[100%] bg-[#1A1A1A]  m-[20px] p-[20px] capitalize rounded-md text-[#ffff]'>
+         <div className='mt-[10px] md:m-[15px] text-center w-[100%] bg-[#1A1A1A]   p-[20px] capitalize rounded-md text-[#ffff]'>
             <h3 className="font-bold text-white text-[2rem]">10k+</h3>
             <p className="">properties for client</p>
          </div>
-         <div className=' w-[100%] bg-[#1A1A1A]  m-[20px]  p-[20px] capitalize  rounded-md text-[#ffff]'>
+         <div className='mt-[10px] md:m-[15px] w-[100%] bg-[#1A1A1A]   p-[20px] capitalize  rounded-md text-[#ffff] text-center'>
             <h3 className="font-bold text-white text-[2rem]">16+</h3>
             <p className="">years of experience</p>
          </div>
