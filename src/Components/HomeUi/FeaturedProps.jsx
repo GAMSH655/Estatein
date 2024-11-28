@@ -5,8 +5,9 @@ import SKY from "../../../src/assets/Sky.png"
 import Abs from "../../assets/Abstract.png"
 import { FaArrowLeft } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+import { useWindowSize } from 'react-use'
 const FeaturedProps = () => {
-
+  const { width } = useWindowSize();
   const arrayofHouse = [
     {houseImg:Bungalow,houseName: "seaside serenity villa" , houseInfo: "A stunning 4-bedroom, 3-bathroom villa in a peaceful suburban neighborhood...",
       bedRoomIcon: "fa-solid fa-bed",
@@ -14,7 +15,7 @@ const FeaturedProps = () => {
       villa: "fa-solid fa-city",
       bedRoom : 5,
       btHub: 8,
-      showcard:false
+      screenSize:768
     },
     {houseImg:Skycrapper,houseName: 
       "Metropolitan Haven" ,
@@ -24,7 +25,7 @@ const FeaturedProps = () => {
        villa: "fa-solid fa-city",
        bedRoom : 3,
        btHub: 4,
-       showcard:false
+       screenSize:768
     },
     {houseImg:SKY,houseName: 
       "Rustic Retreat Cottage" , 
@@ -34,7 +35,7 @@ const FeaturedProps = () => {
       villa: "fa-solid fa-city",
       bedRoom : 5,
       btHub: 8,
-      showcard:false
+      // screenSize:768
     },
   ]
   return (
@@ -50,8 +51,9 @@ const FeaturedProps = () => {
       <div className="flex flex-col mt-[30px] md:flex-row">
 
         {
-          arrayofHouse.map(({houseImg , houseName , houseInfo ,bathHubIcon, bedRoomIcon ,villa, bedRoom ,btHub} ,index)=>{
-            return <div key={index} className=" border sm:w-[100vw] border-white m-[5px] p-[10px] transition-transform duration-300 hover:scale-90">
+          arrayofHouse.map(({houseImg , houseName , houseInfo ,bathHubIcon, bedRoomIcon ,villa, bedRoom ,btHub , screenSize} ,index)=>{
+            return <div key={index}className={`border border-white rounded-md m-[5px] p-[10px] transition-transform duration-300 hover:scale-90 ${screenSize > width ? "hidden md:block" : "block"}`}
+>
                 <img src={houseImg} alt="" className='w-[100%] capitalize object-contain' />
               <h3 className="text-3xl font-semibold text-[white] p-[10px]">{houseName}</h3>
                <p className="text-[white] p-[10px]">{houseInfo}</p>
@@ -71,7 +73,7 @@ const FeaturedProps = () => {
           })
         }
       </div>
-      <div className="flex justify-end">
+      <div className="flex  items-center justify-center md:justify-end">
              <span className=' text-[12px] text-white font-bold m-[10px]  bg-purple p-[5px] rounded-full'>
                 <FaArrowLeft/>
              </span>

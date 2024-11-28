@@ -58,11 +58,11 @@ const Customers = () => {
       <h3 className="font-semibold capitalize text-white text-2xl md:text-3xl">
         What our clients say
       </h3>
-      <div className="flex flex-col md:flex-row items-center mt-4">
+      <div className="flex flex-col md:flex-row md:justify-between items-center mt-4">
         <p className="text-sm text-white">
           Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.
         </p>
-        <button className="bg-black w-48 text-white capitalize border border-white hover:bg-purple-500 transition-all py-1 px-4 rounded-md">
+        <button className="bg-black w-[350px] md:ml-[20px] md:w-[200px]  text-white capitalize border border-white hover:bg-purple-500 transition-all py-1 px-4 rounded-md">
           View All Testimonies
         </button>
       </div>
@@ -86,7 +86,7 @@ const Customers = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between w-32 mt-6">
+        <div className="flex  items-center  justify-center md:justify-between w-32 mt-6">
           <button
             onClick={handlePrev}
             className="text-white bg-purple-500 p-2 rounded-full hover:bg-purple-700"
