@@ -52,7 +52,7 @@ const FeaturedProps = () => {
 
         {
           arrayofHouse.map(({houseImg , houseName , houseInfo ,bathHubIcon, bedRoomIcon ,villa, bedRoom ,btHub , screenSize} ,index)=>{
-            return <div key={index}className={`border border-white rounded-md m-[5px] p-[10px] transition-transform duration-300 hover:scale-90 ${screenSize > width ? "hidden md:block" : "block"}`}
+            return <div key={index}className={`border border-white rounded-md m-[5px] p-[10px] transition-transform duration-300 hover:scale-90 ${screenSize > width ? "hidden md:flex" : "block"}`}
 >
                 <img src={houseImg} alt="" className='w-[100%] capitalize object-contain' />
               <h3 className="text-3xl font-semibold text-[white] p-[10px]">{houseName}</h3>
