@@ -63,13 +63,13 @@
             </p>
             </div>
             <div className="flex items-center border border-gray-300 rounded-lg p-2 bg-white">
-        <FaTelegramPlane className="text-blue-500 text-2xl mx-2" />
+        <FaTelegramPlane className="text-purple text-2xl mx-2" />
         <input
             type="text"
             placeholder="Enter your message..."
             className="flex-grow outline-none p-2 text-sm"
         />
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+        <button className="bg-purple text-white px-4 py-2 rounded-lg ">
             Send
         </button>
         </div>
@@ -87,7 +87,7 @@
             {renderLinks(informationLinks)}
         </div>
         </footer>
-        <div className="bg-[#141414] flex flex-col  md:justify-between md:flex-row mpx-6 md:px-[70px] py-[20px]">
+        <div className="bg-[#141414] flex flex-col  md:justify-between md:flex-row  md:px-[70px] py-[20px]">
             <p className="text-white ">Copyright &copy; 2023 Metrohyp Digital</p>
             <div className="flex">
             {socialIcons.map(({ icon, href }, index) => (
