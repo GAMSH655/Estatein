@@ -55,7 +55,7 @@ const Faq = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`w-full transition-transform duration-500 ${
+                className={`w-full transition-transform duration-500  ${
                   index === currentIndex ? "block" : "hidden"
                 }`}
               >
@@ -95,6 +95,13 @@ const Faq = () => {
           ))}
         </div>
       </div>
+    </div>
+    <div className="flex flex-col md:flex-row md:items-center md:justify-center sm:border-t border-t-[.5px] border-gray-300 md:p-[20px]">
+     <div className="">
+     <h3 className="capitalize text-2xl text-white md:text-3xl md:break-words">start your real estate journey today </h3>
+     <p className="text-sm text-[#ffff] p-[10px] md:mt-[10px]">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>
+     </div>
+      <button className="bg-purple w-[100%] md:mt-[50px] text-white border-none outline-none rounded-md md:w-[250px] md:pt-[5px] p-[5px]">explore properties</button>
     </div>
     </div>
   )
