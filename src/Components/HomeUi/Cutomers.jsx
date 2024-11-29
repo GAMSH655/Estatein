@@ -67,7 +67,7 @@ const Customers = () => {
         </button>
       </div>
       <div className="flex flex-col items-center mt-8">
-        <div className="border border-white p-6 rounded-md w-full max-w-md">
+        <div className="border border-gray-700  p-6 rounded-md w-full max-w-md">
           <div className="flex justify-center mb-4">
             <FaStar className="text-yellow-400" />
             <FaStar className="text-yellow-400" />
