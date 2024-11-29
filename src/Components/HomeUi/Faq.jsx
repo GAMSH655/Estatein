@@ -32,7 +32,7 @@ const items = [
         >
           <button
             onClick={() => toggleAccordion(index)}
-            className="w-full text-left px-4 py-3 text-lg font-semibold bg-blue-200 hover:bg-blue-300"
+            className="w-full text-left px-4 py-3 text-lg font-normal bg-blue-200 hover:bg-blue-300 md:font-semibold
           >
             {item.title}
           </button>
