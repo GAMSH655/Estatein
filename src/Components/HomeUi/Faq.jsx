@@ -47,7 +47,7 @@ const Faq = () => {
         <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
         <div className="flex justify-between items-center mb-4">
           <p>Find answers to common questions about Estatein services.</p>
-          <button className="text-sm underline">View All FAQs</button>
+          <button className="text-sm block">View All FAQs</button>
         </div>
         <div className="relative">
           {/* Carousel Content */}
@@ -55,7 +55,7 @@ const Faq = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className={`min-w-full transition-transform duration-500 ${
+                className={`w-full transition-transform duration-500 ${
                   index === currentIndex ? "block" : "hidden"
                 }`}
               >
