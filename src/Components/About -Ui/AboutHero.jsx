@@ -36,13 +36,13 @@ export const Hero = () => {
      </div>
       </div> 
       
-<div className="bg-black text-white p-10">
+<div className="bg-black text-white p-[0px] md:p-[10px]">
 
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
    
     <div>
-      <h2 className="text-3xl md:text-5xl font-semibold mb-4">Our Values</h2>
-      <p className="text-gray-400 text-lg">
+      <h2 className="text-3xl p-[10px] md:text-5xl font-semibold mb-4">Our Values</h2>
+      <p className="text-gray-400 text-lg p-[10px] md">
         Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.
       </p>
     </div>
@@ -50,8 +50,7 @@ export const Hero = () => {
     
     <div className="bg-[#1A1A1A] rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
     
-      <div classname
-      ="flex flex-col items-center text-center p-4 border border-gray-700 rounded-lg">
+      <div className ="flex flex-col items-center text-center p-4 border border-gray-700 rounded-lg">
         <div className="flex flx-row">
         <div className="text-purple-500 mb-4">
           <img src={Trust} alt="" className='w-[50px] h-[50px]'  />
