@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Logo from '../../assets/Symbol.png';
-
+import { NavLink } from 'react-router-dom';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const NavigatingLinks = [
-        { Link: '#', name: 'home' },
-        { Link: '#', name: 'about us' },
+        { Link: '/home', name: 'home' },
+        { Link: '/about', name: 'about us' },
         { Link: '#', name: 'properties' },
         { Link: '#', name: 'services' },
     ];
@@ -31,13 +31,13 @@ const Header = () => {
                     } absolute lg:relative top-full left-0 w-full lg:w-auto bg-[#1A1A1A] lg:bg-transparent p-4 lg:p-0`}
                 >
                     {NavigatingLinks.map(({ Link, name }, id) => (
-                        <a
-                            href={Link}
+                        <NavLink
+                            to={Link}
                             className="block lg:inline-block text-white text-base font-semibold capitalize hover:underline py-2 lg:py-0"
                             key={id}
                         >
                             {name}
-                        </a>
+                        </NavLink>
                     ))}
                 </nav>
                 <button className="hidden lg:inline-block bg-black text-white px-4 py-2 rounded-lg capitalize">
