@@ -1,9 +1,9 @@
 import React from 'react'
-import Skyp from "../../assets/Cont.png"
-import smallHouse from "../../assets/small-home.png"
-import Money from "../../assets/moneyt.png"
-import Roller from "../../assets/roll.png"
+import Trust from "../../assets/Trust.png"
 import HandHome from "../../assets/Hand-Home.png"
+import Ex from "../../assets/Ex.png"
+import Centric from "../../assets/Centric.png"
+import Commit from "../../assets/Commit.png"
 export const Hero = () => {
   return (
       <div>
@@ -35,25 +35,79 @@ export const Hero = () => {
       <img src={HandHome} alt="" className="w-full h-auto md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]" />
      </div>
       </div> 
-         <div className="flex justify-center mt-[30px] flex-col md:flex-row ">
-         <div className='bg-[#1A1A1A] m-[3px] p-[20px] capitalize rounded-md text-[#ffff] w-full'>
-           <img src={smallHouse} alt="" className='translate-x-[150px] md:translate-x-[100px] h-[45px] w-[45px]' />
-            <p className="text-center p-[10px] capitalize">properties for client</p>
-         </div>
-      <div className='bg-[#1A1A1A] m-[3px] p-[20px] capitalize rounded-md text-[#ffff] w-full'>
-           <img src={Money} alt="" className='translate-x-[150px] md:translate-x-[100px] h-[45px] w-[45px]' />
-            <p  className="text-center p-[10px] capitalize">unlock properties value</p>
-         </div>
-      <div className='bg-[#1A1A1A] m-[3px] p-[20px] capitalize rounded-md text-[#ffff] w-full'>
-           <img src={smallHouse} alt="" className='translate-x-[150px] md:translate-x-[100px]  h-[45px] w-[45px]' />
-           <p className=" text-center p-[10px] capitalize"> effortless properties management </p>
-         </div>
-      <div className='bg-[#1A1A1A] m-[3px] p-[20px] capitalize rounded-md text-[#ffff] w-full'>
-           <img src={Roller} alt="" className='translate-x-[150px] md:translate-x-[100px]  h-[45px] w-[45px]' />
-            <p className="text-center p-[10px] capitalize">find your dream home </p>
-         </div>
-         </div>
+      
+<div className="bg-black text-white p-10">
+
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+   
+    <div>
+      <h2 className="text-3xl md:text-5xl font-semibold mb-4">Our Values</h2>
+      <p className="text-gray-400 text-lg">
+        Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.
+      </p>
+    </div>
+
+    
+    <div className="bg-[#1A1A1A] rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+    
+      <div classname
+      ="flex flex-col items-center text-center p-4 border border-gray-700 rounded-lg">
+        <div className="flex flx-row">
+        <div className="text-purple-500 mb-4">
+          <img src={Trust} alt="" className='w-[50px] h-[50px]'  />
+        </div>
+        <h3 className="font-bold text-[16px] capitalize p-[10px]">Trust</h3>
+        </div>
+        <p className="text-gray-400">
+          Trust is the cornerstone of every successful real estate transaction.
+        </p>
+      </div>
+
+     
+      <div class="flex flex-col items-center text-center p-4 border border-gray-700 rounded-lg">
+        <div className="flex flx-row">
+        <div class="text-purple-500 mb-4">
+         <img src={Ex} alt="" className='w-[50px] h-[50px]' />
+        </div>
+        <h3 className="font-bold text-[16px] capitalize p-[10px]">Excellence</h3>
+        </div>
+        <p class="text-gray-400">
+          We set the bar high for ourselves, from the properties we list to the services we provide.
+        </p>
+      </div>
+
+     
+      <div class="flex flex-col items-center text-center p-4 border border-gray-700 rounded-lg">
+      <div className="flex flex-row">
+        <div class="text-purple-500 mb-4">
+        <img src={Centric} alt="" className='w-[50px] h-[50px]' />
+        </div>
+        <h3 class="font-bold text-[16px] capitalize p-[10px]">Client-Centric</h3>
+        </div>
+        <p class="text-gray-400">
+          Your dreams and needs are at the center of our universe. We listen. We understand.
+        </p>
+      </div>
+
+
+      <div class="flex flex-col items-center text-center p-4 border border-gray-700 rounded-lg">
+        <div className="flex flex-row">
+        <div class="text-purple-500 mb-4">
+            <img src={Commit} alt="" className='w-[50px] h-[50px]' />
+        </div>
+        <h3 class="font-bold text-[16px] capitalize p-[10px]">Our Commitment</h3>
+        </div>
+        <p class="text-gray-400">
+          We are dedicated to providing you with the highest level of service, professionalism, and support.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div> 
   )
 }
 export default Hero
+
+

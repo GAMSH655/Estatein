@@ -1,0 +1,6 @@
+.gridBox{
+    display: grid;
+    grid-template-rows:repeat(2 ,1fr );
+
+    display: flex;
+}
