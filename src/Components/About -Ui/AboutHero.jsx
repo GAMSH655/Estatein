@@ -3,7 +3,7 @@ import Skyp from "../../assets/Cont.png"
 import smallHouse from "../../assets/small-home.png"
 import Money from "../../assets/moneyt.png"
 import Roller from "../../assets/roll.png"
-import Homeicon from "../../assets/home-icon.png"
+import HandHome from "../../assets/Hand-Home.png"
 export const Hero = () => {
   return (
       <div>
@@ -11,9 +11,8 @@ export const Hero = () => {
       <div>
       <div className=" flex flex-col-reverse md:flex-row">
       <div className= "md:p-[50px]" >
-       <h3 className="text-2xl md:text-5xl text-[#ffff] font-semibold p-[10px]"> Discover Your Dream</h3>
-       <h3 className="text-2xl md:text-5xl text-[#ffff] font-semibold  p-[10px]"> Property with Estatein</h3>
-       <p className="text-[#ffff]   p-[10px] md:p-[20px]"> Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
+       <h3 className="text-2xl md:text-5xl text-[#ffff] font-semibold p-[10px] capitalize">our journey</h3>
+       <p className="text-[#ffff]   p-[10px] md:p-[20px]"> Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we've expanded our reach, forged valuable partnerships, and gained the trust of countless clients.</p>
        <div className="md:mt-[20px]">
        <button className="bg-black text-white font-bold py-2 px-4 rounded  border border-white hover:bg-purple hover:shadow-lg transition-all duration-300 m-[10px] w-[360px] md:w-[180px] capitalize ">learn more</button>
        <button className="bg-black text-white font-bold py-2 px-4 rounded border border-white hover:bg-purple hover:shadow-lg transition-all duration-300  m-[10px]  w-[360px] md:w-[180px]  capitalize"> browse properties</button>
@@ -33,7 +32,7 @@ export const Hero = () => {
          </div>
       </div>
     </div>
-      <img src={Skyp} alt="" className="w-full h-auto md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]" />
+      <img src={HandHome} alt="" className="w-full h-auto md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px]" />
      </div>
       </div> 
          <div className="flex justify-center mt-[30px] flex-col md:flex-row ">
