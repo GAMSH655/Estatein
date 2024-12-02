@@ -5,7 +5,7 @@ const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const NavigatingLinks = [
-        { Link: '/home', name: 'home' },
+        { Link: '/', name: 'home' },
         { Link: '/about', name: 'about us' },
         { Link: '#', name: 'properties' },
         { Link: '#', name: 'services' },
