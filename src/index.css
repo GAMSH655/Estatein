@@ -10,3 +10,8 @@ body{
     background-color:black;
     overflow-x: hidden;
 }
+.pup{
+    background-image: linear-gradient(to top , #703BF7 -195%, black);
+    background-color: #703BF7;
+
+}

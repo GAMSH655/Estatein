@@ -79,10 +79,7 @@ export const Hero = () => {
       </div> 
       
 <div className="bg-black text-white p-[0px] md:p-[10px]"  
-     data-aos="fade-left"
-     data-aos-offset="200"
-     data-aos-delay="70"
-     data-aos-duration="1000">
+  data-aos="fade-left"  data-aos-duration="3000">
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
    
     <div>
@@ -149,14 +146,7 @@ export const Hero = () => {
    
   </div>
 </div>
-   <div className="mt-[10px] md:mt-[20px"  data-aos="fade-left"
-     data-aos-offset="200"
-     data-aos-delay="70"
-     data-aos-duration="1000"
-     data-aos-easing="ease-in-out"
-     data-aos-mirror="true"
-     data-aos-once="false"
-     data-aos-anchor-placement="top-center">
+   <div className="mt-[10px] md:mt-[20px["  data-aos="fade-right"  data-aos-duration="3000">
    <h3 className="text-[2rem] text-white font-semibold p-[10px] capitalize"> our achievement</h3>
    <p className="text-[#ffff]   p-[10px] md:p-[20px">Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.</p>
    <div className="flex flex-col md:flex-row">
