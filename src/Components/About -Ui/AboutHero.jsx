@@ -48,7 +48,7 @@ export const Hero = () => {
     </div>
 
     
-    <div className="bg-[#1A1A1A] rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="bg-[#1A1A1A] rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 gap-6 shadow">
     
       <div className ="flex flex-col items-center text-center p-4 border border-gray-700 rounded-lg">
         <div className="flex flx-row">
@@ -101,9 +101,27 @@ export const Hero = () => {
         </p>
       </div>
     </div>
+   
   </div>
 </div>
-
+   <div className="mt-[10px] md:mt-[20px]">
+   <h3 className="text-[2rem] text-white font-semibold p-[10px] capitalize"> our achievement</h3>
+   <p className="text-[#ffff]   p-[10px] md:p-[20px">Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.</p>
+   <div className="flex flex-col md:flex-row">
+    <div className="border-[.5px] border-gray-500 rounded-md m-[10px] shad ">
+    <h3 class="font-bold text-[1.5rem] capitalize p-[10px] text-white">3year of experience </h3>
+    <p className="text-white font-normal text-[1rem] p-[10px]">With over 3 years in the industry, we've amassed a wealth of knowledge and experience, becoming a go-to resource for all things real estate.</p>
+    </div>
+    <div className="border-[.5px] border-gray-500 rounded-md m-[10px] shad ">
+    <h3 class="font-bold text-[1.5rem] capitalize p-[10px] text-white">Happy Clients </h3>
+    <p className="text-white font-normal text-[1rem] p-[10px]">Our greatest achievement is the satisfaction of our clients. Their success stories fuel our passion for what we do.</p>
+    </div>
+    <div className="border-[.5px] border-gray-500 rounded-md m-[10px] shad ">
+    <h3 class="font-bold text-[1.5rem] capitalize p-[10px] text-white">Industry Recognition </h3>
+    <p className="text-white font-normal text-[1rem] p-[10px]">We've earned the respect of our peers and industry leaders, with accolades and awards that reflect our commitment to excellence..</p>
+    </div>
+   </div>
+   </div>
       </div> 
   )
 }
