@@ -4,14 +4,12 @@ import './App.css'
 import Home from "../src/Pages/Home"
 import About from '../src/Pages/About'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>  
     <BrowserRouter>
      <Routes>
-       <Route path='/' element={ <Home/>}/>
-       <Route path='/about' element={<About/>} />
+       <Route path='/home' element={ <Home/>}/>
+       <Route path='/about' element={<About/>}/>
        <Route/>
        <Route/>
        <Route/>
