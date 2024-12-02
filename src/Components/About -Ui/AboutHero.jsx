@@ -82,11 +82,7 @@ export const Hero = () => {
      data-aos="fade-left"
      data-aos-offset="200"
      data-aos-delay="70"
-     data-aos-duration="1000"
-     data-aos-easing="ease-in-out"
-     data-aos-mirror="true"
-     data-aos-once="false"
-     data-aos-anchor-placement="top-center">
+     data-aos-duration="1000">
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
    
     <div>
