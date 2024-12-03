@@ -27,7 +27,7 @@ export const Hero = () => {
         duration: 400, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
         once: false, // whether animation should happen only once - while scrolling down
-        mirror: false, // whether elements should animate out while scrolling past them
+        mirror: true, // whether elements should animate out while scrolling past them
         anchorPlacement: 'top-bottom', // defines which position
     });
   },[])
@@ -75,7 +75,7 @@ export const Hero = () => {
       data-aos-mirror="true"
       data-aos-once="false"
       data-aos-anchor-placement="top-center" />
-     </div>
+     </div>     
       </div> 
       
 <div className="bg-black text-white p-[0px] md:p-[10px]"  

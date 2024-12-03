@@ -72,19 +72,27 @@ export const Hero = () => {
       </div> 
          <div className="flex justify-center mt-[30px] flex-col md:flex-row ">
          <div className='bg-[#1A1A1A] m-[3px] p-[20px] capitalize rounded-md text-[#ffff] w-full'>
-           <img src={smallHouse} alt="" className='translate-x-[150px] md:translate-x-[100px] h-[45px] w-[45px]' />
+           <div className="flex items-center justify-center">
+           <img src={smallHouse} alt="" className=' h-[45px] w-[45px]' />
+           </div>
             <p className="text-center p-[10px] capitalize">properties for client</p>
          </div>
       <div className='bg-[#1A1A1A] m-[3px] p-[20px] capitalize rounded-md text-[#ffff] w-full'>
-           <img src={Money} alt="" className='translate-x-[150px] md:translate-x-[100px] h-[45px] w-[45px]' />
+          <div className="flex items-center justify-center">
+          <img src={Money} alt="" className='h-[45px] w-[45px]' />
+          </div>
             <p  className="text-center p-[10px] capitalize">unlock properties value</p>
          </div>
       <div className='bg-[#1A1A1A] m-[3px] p-[20px] capitalize rounded-md text-[#ffff] w-full'>
-           <img src={smallHouse} alt="" className='translate-x-[150px] md:translate-x-[100px]  h-[45px] w-[45px]' />
+          <div className="flex items-center justify-center">
+          <img src={smallHouse} alt="" className='h-[45px] w-[45px]' />
+          </div>
            <p className=" text-center p-[10px] capitalize"> effortless properties management </p>
          </div>
       <div className='bg-[#1A1A1A] m-[3px] p-[20px] capitalize rounded-md text-[#ffff] w-full'>
-           <img src={Roller} alt="" className='translate-x-[150px] md:translate-x-[100px]  h-[45px] w-[45px]' />
+         <div className="flex items-center justify-center">
+         <img src={Roller} alt="" className='  h-[45px] w-[45px]' />
+         </div>
             <p className="text-center p-[10px] capitalize">find your dream home </p>
          </div>
          </div>

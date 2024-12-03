@@ -43,7 +43,7 @@ const FeaturedProps = () => {
           <div className='md:m-[50px]'>
       <h3 className="font-medium md:font-bold capialize text-white text-[2rem] p-[10px] md:p-[0px]"> Featured properties</h3>
       <div className="flex flex-col  md:flex-row  items-center mt-[20px] ">
-        <p className=" text-white text-wrap p-[10px] ">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available <br /> through Estatein. Click "View Details" for more information.</p>
+        <p className=" text-white p-[10px] break-words">Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click "View Details" for more information.</p>
          <button className='bg-[#262626] w-[290px] mt-[20px] md:w-[190px] md:ml-[20px] text-white capitalize outline-none border border-white hover:bg-purple transition-all p-[4px] rounded-md '>
            view all properties
          </button>

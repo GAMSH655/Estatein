@@ -59,7 +59,7 @@ const Customers = () => {
         What our clients say
       </h3>
       <div className="flex flex-col md:flex-row md:justify-between items-center mt-4">
-        <p className="text-sm text-white  p-[10px] md:m-[10px]">
+        <p className="text-sm text-white ">
           Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.
         </p>
         <button className="bg-black w-[350px] md:ml-[20px] md:w-[200px]  text-white capitalize border border-white hover:bg-purple-500 transition-all py-1 px-4 rounded-md">
