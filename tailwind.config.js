@@ -9,6 +9,9 @@ export default {
        colors:{
         purple: "#703BF7"
        },
+       borderWidth: {
+        'tiny': '0.5px'
+      },
        screens: {
         'xs': '480px',  // Custom small screen
         'sm': '640px',

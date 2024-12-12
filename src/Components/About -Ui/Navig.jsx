@@ -2,6 +2,8 @@ import React from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import Jack from "../../assets/Jack.png"
+import {FaTwitter} from "react-icons/fa6"
 const Navig = () => {
     useEffect(()=>{
         AOS.init({
@@ -51,6 +53,33 @@ const Navig = () => {
          NavigTitle: "Getting the Best Deal",
          NavigText: "We'll help you negotiate the best terms and prepare your offer. Our goal is to secure the property at the right price and on favorable terms."
         } ];
+
+        const TeamArray = [
+            {TeamImg: Jack ,
+             TeamName: "max micthell",
+             TeamPosition:"Founder"
+            },
+            {TeamImg: Jack ,
+             TeamName: "max micthell",
+             TeamPosition:"Founder"
+            },
+            {TeamImg: Jack ,
+             TeamName: "max micthell",
+             TeamPosition:"Founder"
+            },
+            {TeamImg: Jack ,
+             TeamName: "max micthell",
+             TeamPosition:"Founder"
+            },
+            {TeamImg: Jack ,
+             TeamName: "max micthell",
+             TeamPosition:"Founder"
+            },
+            {TeamImg: Jack ,
+             TeamName: "max micthell",
+             TeamPosition:"Founder"
+            },
+        ]
   return (
         <div>
         <div className="md:mt-[50px]"  data-aos="fade-left"
@@ -76,8 +105,27 @@ const Navig = () => {
             })
     }
     </div>
+    <h3 className="text-[1rem] md:text-[1.5rem] text-white font-normal p-[5px] capitalize">Navigating the Estatein Experience</h3>
+    <p className="text-[#ffff]   p-[10px]">At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works.</p>
+    <div className="flex flex-wrap justify-center items-center md:grid md:grid-cols-3 md:gap-4 md:place-items-center m-[10px] md:m-[50px] ">
+         {
+            TeamArray.map(({TeamImg , TeamName , TeamPosition} , index)=>(
+                <div className=" m-[10px] border-tiny rounded-lg border-gray-300 p-4 flex flex-col items-center space-y-3 ">
+                <img src={TeamImg} alt="Team" className="w-full h-auto" />
+                <span className="bg-purple p-1 rounded-lg relative bottom-[20px] flex items-center justify-center w-[100px] text-[1.2rem]">
+                    <FaTwitter className="text-white" />
+                </span>
+                <div className="text-center text-white relative bottom-[20px]">
+                    <h3 className="capitalize">{TeamName}</h3>
+                    <p className="capitalize">{TeamPosition}</p>
+                </div>
+            </div>
+            
+           ) )
+         }   
+    </div>
     </div> 
-        </div>
+    </div>
     )
     }
 

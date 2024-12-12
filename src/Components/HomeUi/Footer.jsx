@@ -94,7 +94,7 @@
             <a
                 key={index}
                 href={href}
-                className="m-[5px] hover:bg-purple hover:text-white p-[10px] w-[50px] h-[50px] border border-gray-500 rounded-full text-center text-2xl flex items-center justify-center"
+                className="m-[5px] hover:bg-purple hover:text-white text-white p-[10px] w-[50px] h-[50px] border border-gray-500 rounded-full text-center text-2xl flex items-center justify-center"
             >
                 {icon}
             </a>

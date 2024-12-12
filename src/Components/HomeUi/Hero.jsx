@@ -44,7 +44,7 @@ export const Hero = () => {
       data-aos-mirror="true"
       data-aos-once="false"
       data-aos-anchor-placement="top-center">
-      <div className= "md:p-[50px]" >
+      <div className= " md:p-[50px]" >
        <h3 className="text-2xl md:text-5xl text-[#ffff] font-semibold p-[10px]"> Discover Your Dream</h3>
        <h3 className="text-2xl md:text-5xl text-[#ffff] font-semibold  p-[10px]"> Property with Estatein</h3>
        <p className="text-[#ffff]   p-[10px] md:p-[20px]"> Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.</p>
