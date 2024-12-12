@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Jack from "../../assets/Jack.png"
-import {FaTwitter} from "react-icons/fa6"
+import {FaTwitter , FaTelegram , FaHand} from "react-icons/fa6"
 const Navig = () => {
     useEffect(()=>{
         AOS.init({
@@ -104,10 +104,11 @@ const Navig = () => {
         </div>
             })
     }
+   
     </div>
     <h3 className="text-[1rem] md:text-[1.5rem] text-white font-normal p-[5px] capitalize">Navigating the Estatein Experience</h3>
     <p className="text-[#ffff]   p-[10px]">At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works.</p>
-    <div className="flex flex-wrap justify-center items-center md:grid md:grid-cols-3 md:gap-4 md:place-items-center m-[10px] md:m-[50px] ">
+    <div className="flex flex-wrap justify-center items-center md:grid md:grid-cols-3 md:gap-4 md:place-items-center">
          {
             TeamArray.map(({TeamImg , TeamName , TeamPosition} , index)=>(
                 <div className=" m-[10px] border-tiny rounded-lg border-gray-300 p-4 flex flex-col items-center space-y-3 ">
@@ -115,19 +116,26 @@ const Navig = () => {
                 <span className="bg-purple p-1 rounded-lg relative bottom-[20px] flex items-center justify-center w-[100px] text-[1.2rem]">
                     <FaTwitter className="text-white" />
                 </span>
-                <div className="text-center text-white relative bottom-[20px]">
+                <div className="text-center text-white">
                     <h3 className="capitalize">{TeamName}</h3>
                     <p className="capitalize">{TeamPosition}</p>
+                    <div className="m-5 flex justify-between bg-[#1A1A1A] w-[300px] p-[10px] rounded-full">
+                    <p className="text-white flex items-center space-x-2">
+                        Say Hello  <FaHand className="text-yellow-400 pl-[5px]" />
+                    </p>
+                    <span className="bg-purple h-8 w-8 rounded-full flex items-center justify-center text-xl">
+                        <FaTelegram className="text-white" />
+                    </span>
+                </div>
                 </div>
             </div>
-            
            ) )
          }   
     </div>
+   
     </div> 
     </div>
-    )
-    }
+    )};
 
 export default Navig
 
