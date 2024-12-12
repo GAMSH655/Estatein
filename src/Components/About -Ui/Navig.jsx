@@ -3,7 +3,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Jack from "../../assets/Jack.png"
+import Sarah from "../../assets/Sarah.png"
+import David from "../../assets/David.png"
+import Micheal from "../../assets/Micheal.png"
 import {FaTwitter , FaTelegram , FaHand} from "react-icons/fa6"
+import Footer from "../../Components/HomeUi/Footer"
 const Navig = () => {
     useEffect(()=>{
         AOS.init({
@@ -59,13 +63,13 @@ const Navig = () => {
              TeamName: "max micthell",
              TeamPosition:"Founder"
             },
-            {TeamImg: Jack ,
-             TeamName: "max micthell",
-             TeamPosition:"Founder"
+            {TeamImg: Sarah ,
+             TeamName: "sarah johnson",
+             TeamPosition:"cheif real estate officer"
             },
-            {TeamImg: Jack ,
-             TeamName: "max micthell",
-             TeamPosition:"Founder"
+            {TeamImg:David,
+             TeamName: "david brown",
+             TeamPosition:"head of property management"
             },
             {TeamImg: Jack ,
              TeamName: "max micthell",
@@ -82,14 +86,7 @@ const Navig = () => {
         ]
   return (
         <div>
-        <div className="md:mt-[50px]"  data-aos="fade-left"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center">
+        <div className="md:mt-[50px]"  >
     <h3 className="text-[1rem] md:text-[3rem] text-white font-normal p-[5px] capitalize">Navigating the Estatein Experience</h3>
     <p className="text-[#ffff]   p-[10px]">At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works.</p>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -106,7 +103,7 @@ const Navig = () => {
     }
    
     </div>
-    <h3 className="text-[1rem] md:text-[1.5rem] text-white font-normal p-[5px] capitalize">Navigating the Estatein Experience</h3>
+    <h3 className="text-[1rem] md:text-[1.5rem] mt-[30px] text-white font-normal p-[5px] capitalize">Navigating the Estatein Experience</h3>
     <p className="text-[#ffff]   p-[10px]">At Estatein, we've designed a straightforward process to help you find and purchase your dream property with ease. Here's a step-by-step guide to how it all works.</p>
     <div className="flex flex-wrap justify-center items-center md:grid md:grid-cols-3 md:gap-4 md:place-items-center">
          {
@@ -132,7 +129,20 @@ const Navig = () => {
            ) )
          }   
     </div>
-   
+    <div className="flex flex-col md:flex-row md:items-center md:justify-center border-t border-gray-300 pt-5 mt-12">
+    <div>
+        <h3 className="capitalize text-2xl text-white md:text-3xl leading-relaxed md:leading-snug">
+            Start your real estate journey today
+        </h3>
+        <p className="text-sm text-white mt-2  break-words">
+            Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.
+        </p>
+    </div>
+    <button className="bg-purple  text-white border-none outline-none rounded-md w-full md:w-64 py-2 mt-5 md:mt-0">
+        Explore Properties
+    </button>
+</div>
+  <Footer/>
     </div> 
     </div>
     )};
